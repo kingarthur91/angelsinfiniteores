@@ -20,7 +20,7 @@ data:extend(
 		flags = {"placeable-neutral"},
 		order="a-b-d",
 		infinite=true,
-		minimum=500,
+		minimum=300,
 		normal=1500,
 		maximum=6000,
 		minable =
@@ -62,7 +62,7 @@ data:extend(
     {
 		sheet =
       {
-    	filename = "__angelsinfiniteores__/graphics/entity/ores//yi-res-2-inf.png",
+    	filename = "__angelsinfiniteores__/graphics/entity/ores-inf/yi-res-2-inf.png",
         priority = "extra-high",
         width = 38,
         height = 38,
@@ -83,7 +83,7 @@ data:extend(
 		flags = {"placeable-neutral"},
 		order="a-b-d",
 		infinite=true,
-		minimum=500,
+		minimum=300,
 		normal=1500,
 		maximum=6000,
 		minable =
@@ -101,7 +101,7 @@ data:extend(
     {
 		sheet =
       {
-    	filename = "__angelsinfiniteores__/graphics/entity/ores//yi-res-2-inf.png",
+    	filename = "__angelsinfiniteores__/graphics/entity/ores-inf/yi-res-2-inf.png",
         priority = "extra-high",
         width = 38,
         height = 38,

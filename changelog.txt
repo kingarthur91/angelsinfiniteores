@@ -1,0 +1,15 @@
+---0.1.3
+-fixed an error for bobs sulfur resource entity (wrong path to ore sheet)
+-fixed a logic error for detecting triggers
+
+---0.1.2
+-lowered infinite ore yield for modded games, should be 20% now (to counter better drills in bobs/yuokis)
+-change the mining time and hardness for some angelsores to higher values
+-Added support for nucular mod
+-changed file structure for vanilla ores
+
+---0.1.1
+-Added support for Yuoki Industries mod
+-Added support for Uranium Power mod
+-changed versioning
+-changed mod structure

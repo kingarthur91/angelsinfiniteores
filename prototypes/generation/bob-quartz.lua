@@ -17,10 +17,9 @@ data:extend(
 	icon = "__bobores__/graphics/icons/quartz.png",
 	flags = {"placeable-neutral"},
 	order="a-b-a",
-	tint = {r = 1, g = 1, b = 1},
-	map_color = {r=0.250, g=0.250, b=0.250},
+	map_color = {r = 1, g = 1, b = 1},
 	infinite=true,
-	minimum=500,
+	minimum=300,
 	normal=1500,
 	maximum=6000,
 	minable =
@@ -62,7 +61,7 @@ data:extend(
 	{
 	  sheet =
 	  {
-		filename = "__angelsinfiniteores__/graphics/entity/ores/ore-3-inf.png",
+		filename = "__angelsinfiniteores__/graphics/entity/ores-inf/ore-3-inf.png",
 		priority = "extra-high",
 		tint = {r = 1, g = 1, b = 1},
 		width = 38,
@@ -84,10 +83,9 @@ data:extend(
 	icon = "__bobores__/graphics/icons/quartz.png",
 	flags = {"placeable-neutral"},
 	order="a-b-a",
-	tint = {r = 1, g = 1, b = 1},
-	map_color = {r=0.250, g=0.250, b=0.250},
+	map_color = {r = 1, g = 1, b = 1},
 	infinite=true,
-	minimum=500,
+	minimum=300,
 	normal=1500,
 	maximum=6000,
 	minable =
@@ -104,7 +102,7 @@ data:extend(
 	{
 	  sheet =
 	  {
-		filename = "__angelsinfiniteores__/graphics/entity/ores/ore-3-inf.png",
+		filename = "__angelsinfiniteores__/graphics/entity/ores-inf/ore-3-inf.png",
 		priority = "extra-high",
 		tint = {r = 1, g = 1, b = 1},
 		width = 38,

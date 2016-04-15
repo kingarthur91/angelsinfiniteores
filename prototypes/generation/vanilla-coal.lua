@@ -1,17 +1,17 @@
 if not angelsmods.ores.enablersomode then
 data:extend(
 {
- {
-    type = "noise-layer",
-    name = "infinite-coal"
- },
- {
+  {
     type = "autoplace-control",
     name = "infinite-coal",
     richness = true,
     order = "b-d"
- },
- {
+  },
+  {
+    type = "noise-layer",
+    name = "infinite-coal"
+  },
+  {
     type = "resource",
     name = "infinite-coal",
     icon = "__base__/graphics/icons/coal.png",

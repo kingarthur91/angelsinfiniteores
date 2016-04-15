@@ -16,7 +16,9 @@ if angelsmods.ores.angelsoretrigger then
 angelsmods.ores.enableangelsores = false
 end
 
-if angelsmods.refining and angelsmods.ores.enableangelsores then
+
+
+if angelsmods.refining and angelsmods.ores.enableangelsores and bobmods.ores then
     require("prototypes.categories")
 	require("prototypes.generation.angels-ore1")
 	require("prototypes.generation.angels-ore2")
@@ -36,15 +38,18 @@ if angelsmods.refining and angelsmods.ores.enableangelsores then
 	end
 else
 	if angelsmods.ores.enableinfiniteores then
-		if angelsmods.ores.enablersomode then
-			require("prototypes.generation.vanilla-resources-rso")
-			else
-			require("prototypes.generation.vanilla-controls")
-			require("prototypes.generation.vanilla-noise")
-			require("prototypes.generation.vanilla-resources")
+		if angelsmods.ores.enablersomode and not bobmods.ores then
+			require("prototypes.generation.vanilla-coal")
+			require("prototypes.generation.vanilla-stone")
+			require("prototypes.generation.vanilla-iron")
+			require("prototypes.generation.vanilla-copper")
 		end
 		
 		if bobmods.ores then
+			require("prototypes.generation.bob-coal")
+			require("prototypes.generation.bob-stone")
+			require("prototypes.generation.bob-iron")
+			require("prototypes.generation.bob-copper")
 			if angelsmods.ores.enableinfinitebobbauxite and bobmods.config.ores.EnableBauxite then
 			require("prototypes.generation.bob-bauxite")
 			end
@@ -95,6 +100,10 @@ else
 		if data.raw.resource["uraninite"] and angelsmods.ores.enableinfiniteuraniumpower then
 		require("prototypes.generation.up-uraninite")
 		require("prototypes.generation.up-fluorite")
+		end
+		
+		if data.raw.resource["uranium-ore"] and angelsmods.ores.enableinfinitenucular then
+		require("prototypes.generation.nuc-uranium")
 		end
 	end
 end

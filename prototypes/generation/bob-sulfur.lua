@@ -1,3 +1,15 @@
+data.raw["resource"]["sulfur"].stages={sheet=
+		{
+		filename = "__angelsinfiniteores__/graphics/entity/ores/ore-7.png",
+		tint = {r = 0.8, g = 0.75, b = 0.1},
+        priority = "extra-high",
+        width = 38,
+        height = 38,
+        frame_count = 4,
+        variation_count = 8
+        }
+}
+
 if not angelsmods.ores.enablersomode then
 data:extend(
 {
@@ -17,10 +29,9 @@ data:extend(
 	icon = "__base__/graphics/icons/sulfur.png",
 	flags = {"placeable-neutral"},
 	order="a-b-a",
-	tint = {r = 0.8, g = 0.75, b = 0.1},
 	map_color = {r=0.8, g=0.75, b=0.1},
 	infinite=true,
-	minimum=500,
+	minimum=300,
 	normal=1500,
 	maximum=6000,
 	minable =
@@ -57,18 +68,18 @@ data:extend(
 		},
 	  },
 	},
-	stage_counts = {1000, 600, 400, 200, 100, 50, 20, 1},
+	stage_counts = {1},
 	stages =
 	{
 	  sheet =
 	  {
-		filename = "__boblibrary__/graphics/entity/ores/ore-4.png",
+		filename = "__angelsinfiniteores__/graphics/entity/ores-inf/ore-7-inf.png",
 		priority = "extra-high",
 		tint = {r = 0.8, g = 0.75, b = 0.1},
 		width = 38,
 		height = 38,
-		frame_count = 4,
-		variation_count = 8
+		frame_count = 8,
+		variation_count = 1
 	  }
 	},
 	},
@@ -83,10 +94,9 @@ data:extend(
 	icon = "__base__/graphics/icons/sulfur.png",
 	flags = {"placeable-neutral"},
 	order="a-b-a",
-	tint = {r = 0.8, g = 0.75, b = 0.1},
 	map_color = {r=0.8, g=0.75, b=0.1},
 	infinite=true,
-	minimum=500,
+	minimum=300,
 	normal=1500,
 	maximum=6000,
 	minable =
@@ -98,18 +108,18 @@ data:extend(
 	},
 	collision_box = {{ -0.1, -0.1}, {0.1, 0.1}},
 	selection_box = {{ -0.5, -0.5}, {0.5, 0.5}},
-	stage_counts = {1000, 600, 400, 200, 100, 50, 20, 1},
+	stage_counts = {1},
 	stages =
 	{
 	  sheet =
 	  {
-		filename = "__boblibrary__/graphics/entity/ores/ore-4.png",
+		filename = "__angelsinfiniteores__/graphics/entity/ores-inf/ore-7-inf.png",
 		priority = "extra-high",
 		tint = {r = 0.8, g = 0.75, b = 0.1},
 		width = 38,
 		height = 38,
-		frame_count = 4,
-		variation_count = 8
+		frame_count = 8,
+		variation_count = 1
 	  }
 	},
 	},

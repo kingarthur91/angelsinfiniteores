@@ -1,3 +1,17 @@
+data.raw["resource"]["uraninite"].stages={sheet=
+		{
+		filename = "__angelsinfiniteores__/graphics/entity/ores/ore-6.png",
+		tint = {r=0.000, g=0.238, b=0.118},
+        priority = "extra-high",
+        width = 38,
+        height = 38,
+        frame_count = 4,
+        variation_count = 8
+        }
+}
+
+data.raw["resource"]["uraninite"].map_color={r=0.60, g=0.28, b=0.34}
+
 if not angelsmods.ores.enablersomode then
 data:extend(
 {
@@ -18,7 +32,7 @@ data:extend(
     flags = {"placeable-neutral"},
     order="a-b-e",
 	infinite=true,
-	minimum=500,
+	minimum=300,
 	normal=1500,
 	maximum=6000,
     minable =
@@ -110,8 +124,9 @@ data:extend(
     {
 		sheet =
       {
-    	filename = "__angelsinfiniteores__/graphics/entity/ores/uraninite-inf.png",
+    	filename = "__angelsinfiniteores__/graphics/entity/ores-inf/ore-6-inf.png",
         priority = "extra-high",
+		tint = {r=0.000, g=0.238, b=0.118},
         width = 38,
         height = 38,
         frame_count = 8,
@@ -131,7 +146,7 @@ data:extend(
     flags = {"placeable-neutral"},
     order="a-b-e",
 	infinite=true,
-	minimum=500,
+	minimum=300,
 	normal=1500,
 	maximum=6000,
     minable =
@@ -148,8 +163,9 @@ data:extend(
     {
 		sheet =
       {
-    	filename = "__angelsinfiniteores__/graphics/entity/ores/uraninite-inf.png",
+    	filename = "__angelsinfiniteores__/graphics/entity/ores-inf/ore-6-inf.png",
         priority = "extra-high",
+		tint = {r=0.000, g=0.238, b=0.118},
         width = 38,
         height = 38,
         frame_count = 8,

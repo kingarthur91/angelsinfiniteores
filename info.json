@@ -1,10 +1,10 @@
 {
   "name": "angelsinfiniteores",
-  "version": "0.1.1",
+  "version": "0.1.3",
   "title": "[AM] Angel's Infinite Ores",
   "author": "Arch666Angel",
   "contact": "",
   "homepage": "",
-  "description": "Adds infinite ores and resource processing lines",
-  "dependencies": ["base >= 0.12.0", "? angelsrefining >= 0.1.1", "? boblibrary >= 0.12.1", "? bobores >= 0.12.0", "? bobplates >= 0.12.0", "? Yuoki >= 0.2.40", "? UraniumPower >= 0.6.3", "? angelsores-disablersomode >= 0.0.1", "? angelsores-disableinfiniteores >= 0.0.1", "? angelsores-disableangelsores >= 0.0.1"]
+  "description": "Adds infinite ores",
+  "dependencies": ["base >= 0.12.0", "? angelsrefining >= 0.1.1", "? bobores >= 0.12.0", "? bobplates >= 0.12.0", "? Yuoki >= 0.2.40", "? UraniumPower >= 0.6.3", "? Nucular >= 0.2.0", "? angelsores-disablersomode >= 0.0.1", "? angelsores-disableinfiniteores >= 0.0.1", "? angelsores-disableangelsores >= 0.0.1"]
 }

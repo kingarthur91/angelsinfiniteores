@@ -8,7 +8,7 @@ data:extend(
     pictures =
     {
       {
-        filename = "__angelsinfiniteores__/graphics/entity/ores/ore-particle-1.png",
+        filename = "__angelsinfiniteores__/graphics/entity/ores-particle/ore-particle-1.png",
         priority = "extra-high",
         tint = {r=0.75, g=0.75, b=0.75},
         width = 5,
@@ -16,7 +16,7 @@ data:extend(
         frame_count = 1
       },
       {
-        filename = "__angelsinfiniteores__/graphics/entity/ores/ore-particle-2.png",
+        filename = "__angelsinfiniteores__/graphics/entity/ores-particle/ore-particle-2.png",
         priority = "extra-high",
         tint = {r=0.75, g=0.75, b=0.75},
         width = 7,
@@ -24,7 +24,7 @@ data:extend(
         frame_count = 1
       },
       {
-        filename = "__angelsinfiniteores__/graphics/entity/ores/ore-particle-3.png",
+        filename = "__angelsinfiniteores__/graphics/entity/ores-particle/ore-particle-3.png",
         priority = "extra-high",
         tint = {r=0.75, g=0.75, b=0.75},
         width = 6,
@@ -32,7 +32,7 @@ data:extend(
         frame_count = 1
       },
       {
-        filename = "__angelsinfiniteores__/graphics/entity/ores/ore-particle-4.png",
+        filename = "__angelsinfiniteores__/graphics/entity/ores-particle/ore-particle-4.png",
         priority = "extra-high",
         tint = {r=0.75, g=0.75, b=0.75},
         width = 9,
@@ -40,7 +40,7 @@ data:extend(
         frame_count = 1
       },
       {
-        filename = "__angelsinfiniteores__/graphics/entity/ores/ore-particle-5.png",
+        filename = "__angelsinfiniteores__/graphics/entity/ores-particle/ore-particle-5.png",
         priority = "extra-high",
         tint = {r=0.75, g=0.75, b=0.75},
         width = 5,
@@ -48,7 +48,7 @@ data:extend(
         frame_count = 1
       },
       {
-        filename = "__angelsinfiniteores__/graphics/entity/ores/ore-particle-6.png",
+        filename = "__angelsinfiniteores__/graphics/entity/ores-particle/ore-particle-6.png",
         priority = "extra-high",
         tint = {r=0.75, g=0.75, b=0.75},
         width = 6,
@@ -56,7 +56,7 @@ data:extend(
         frame_count = 1
       },
       {
-        filename = "__angelsinfiniteores__/graphics/entity/ores/ore-particle-7.png",
+        filename = "__angelsinfiniteores__/graphics/entity/ores-particle/ore-particle-7.png",
         priority = "extra-high",
         tint = {r=0.75, g=0.75, b=0.75},
         width = 7,
@@ -64,7 +64,7 @@ data:extend(
         frame_count = 1
       },
       {
-        filename = "__angelsinfiniteores__/graphics/entity/ores/ore-particle-8.png",
+        filename = "__angelsinfiniteores__/graphics/entity/ores-particle/ore-particle-8.png",
         priority = "extra-high",
         tint = {r=0.75, g=0.75, b=0.75},
         width = 6,
@@ -75,56 +75,56 @@ data:extend(
     shadows =
     {
       {
-        filename = "__angelsinfiniteores__/graphics/entity/ores/ore-particle-shadow-1.png",
+        filename = "__angelsinfiniteores__/graphics/entity/ores-particle/ore-particle-shadow-1.png",
         priority = "extra-high",
         width = 5,
         height = 5,
         frame_count = 1
       },
       {
-        filename = "__angelsinfiniteores__/graphics/entity/ores/ore-particle-shadow-2.png",
+        filename = "__angelsinfiniteores__/graphics/entity/ores-particle/ore-particle-shadow-2.png",
         priority = "extra-high",
         width = 7,
         height = 5,
         frame_count = 1
       },
       {
-        filename = "__angelsinfiniteores__/graphics/entity/ores/ore-particle-shadow-3.png",
+        filename = "__angelsinfiniteores__/graphics/entity/ores-particle/ore-particle-shadow-3.png",
         priority = "extra-high",
         width = 6,
         height = 7,
         frame_count = 1
       },
       {
-        filename = "__angelsinfiniteores__/graphics/entity/ores/ore-particle-shadow-4.png",
+        filename = "__angelsinfiniteores__/graphics/entity/ores-particle/ore-particle-shadow-4.png",
         priority = "extra-high",
         width = 9,
         height = 8,
         frame_count = 1
       },
       {
-        filename = "__angelsinfiniteores__/graphics/entity/ores/ore-particle-shadow-5.png",
+        filename = "__angelsinfiniteores__/graphics/entity/ores-particle/ore-particle-shadow-5.png",
         priority = "extra-high",
         width = 5,
         height = 5,
         frame_count = 1
       },
       {
-        filename = "__angelsinfiniteores__/graphics/entity/ores/ore-particle-shadow-6.png",
+        filename = "__angelsinfiniteores__/graphics/entity/ores-particle/ore-particle-shadow-6.png",
         priority = "extra-high",
         width = 6,
         height = 4,
         frame_count = 1
       },
       {
-        filename = "__angelsinfiniteores__/graphics/entity/ores/ore-particle-shadow-7.png",
+        filename = "__angelsinfiniteores__/graphics/entity/ores-particle/ore-particle-shadow-7.png",
         priority = "extra-high",
         width = 7,
         height = 8,
         frame_count = 1
       },
       {
-        filename = "__angelsinfiniteores__/graphics/entity/ores/ore-particle-shadow-8.png",
+        filename = "__angelsinfiniteores__/graphics/entity/ores-particle/ore-particle-shadow-8.png",
         priority = "extra-high",
         width = 6,
         height = 5,

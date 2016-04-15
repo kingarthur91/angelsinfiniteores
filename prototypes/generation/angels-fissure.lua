@@ -29,14 +29,14 @@ data:extend(
       {
         {
           type = "fluid",
-          name = "outer-core-slurry",
+          name = "thermal-water",
           amount_min = 2,
           amount_max = 2,
           probability = 1
-        }
+        },
       }
     },
-    collision_box = {{ -4.9, -4.9}, {4.9, 4.9}},
+    collision_box = {{ -4.4, -4.4}, {4.4, 4.4}},
     selection_box = {{ -2.5, -2.5}, {2.5, 2.5}},
     autoplace =
     {
@@ -70,7 +70,7 @@ data:extend(
     {
       sheet =
       {
-        filename = "__angelsinfiniteores__/graphics/entity/ores/fissure.png",
+        filename = "__angelsinfiniteores__/graphics/entity/patches/fissure-1.png",
 		tint = {r = 0.65, g = 0.4, b = 0.15},
         priority = "extra-high",
         width = 256,

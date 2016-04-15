@@ -29,3 +29,6 @@ angelsmods.ores.enableinfiniteyuoki = true
 
 --Enables ifinite Ores for Uranium Power mod
 angelsmods.ores.enableinfiniteuraniumpower = true
+
+--Enables ifinite Ores for Nucular mod
+angelsmods.ores.enableinfinitenucular = true

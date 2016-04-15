@@ -1,3 +1,17 @@
+data.raw["resource"]["fluorite"].stages={sheet=
+		{
+		filename = "__angelsinfiniteores__/graphics/entity/ores/ore-7.png",
+		tint = {r=0.60, g=0.28, b=0.34},
+        priority = "extra-high",
+        width = 38,
+        height = 38,
+        frame_count = 4,
+        variation_count = 8
+        }
+}
+
+data.raw["resource"]["fluorite"].map_color={r=0.60, g=0.28, b=0.34}
+
 if not angelsmods.ores.enablersomode then
 data:extend(
 {
@@ -18,7 +32,7 @@ data:extend(
     flags = {"placeable-neutral"},
     order="a-b-f",
 	infinite=true,
-	minimum=500,
+	minimum=300,
 	normal=1500,
 	maximum=6000,
     minable =
@@ -110,7 +124,9 @@ data:extend(
     {
       sheet =
       {
-    	filename = "__angelsinfiniteores__/graphics/entity/ores/fluorite-inf.png",
+    	--filename = "__angelsinfiniteores__/graphics/entity/ores-inf/fluorite-inf.png",
+		filename = "__angelsinfiniteores__/graphics/entity/ores-inf/ore-7-inf.png",
+		tint = {r=0.60, g=0.28, b=0.34},
         priority = "extra-high",
         width = 38,
         height = 38,
@@ -118,7 +134,8 @@ data:extend(
         variation_count = 1
       }
     },
-    map_color = {r=0.205, g=0.000, b=0.205}
+    --map_color = {r=0.205, g=0.000, b=0.205}
+	map_color = {r=0.60, g=0.28, b=0.34},
   }
 })
 else
@@ -131,7 +148,7 @@ data:extend(
     flags = {"placeable-neutral"},
     order="a-b-f",
 	infinite=true,
-	minimum=500,
+	minimum=300,
 	normal=1500,
 	maximum=6000,
     minable =
@@ -148,7 +165,9 @@ data:extend(
     {
 		sheet =
       {
-    	filename = "__angelsinfiniteores__/graphics/entity/ores/fluorite-inf.png",
+    	--filename = "__angelsinfiniteores__/graphics/entity/ores-inf/fluorite-inf.png",
+		filename = "__angelsinfiniteores__/graphics/entity/ores-inf/ore-7-inf.png",
+		tint = {r=0.60, g=0.28, b=0.34},
         priority = "extra-high",
         width = 38,
         height = 38,
@@ -156,7 +175,8 @@ data:extend(
         variation_count = 1
       }
     },
-    map_color = {r=0.205, g=0.000, b=0.205}
+    --map_color = {r=0.205, g=0.000, b=0.205}
+	map_color = {r=0.60, g=0.28, b=0.34},
   }
 })
 end

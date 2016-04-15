@@ -19,7 +19,7 @@ data:extend(
 	order="a-b-a",
 	map_color = {r=0.78, g=0.38, b=0.08},
 	infinite=true,
-	minimum=500,
+	minimum=300,
 	normal=1500,
 	maximum=6000,
 	minable =
@@ -61,7 +61,7 @@ data:extend(
 	{
 	  sheet =
 	  {
-		filename = "__angelsinfiniteores__/graphics/entity/ores/ore-5-inf.png",
+		filename = "__angelsinfiniteores__/graphics/entity/ores-inf/ore-5-inf.png",
 		priority = "extra-high",
 		tint = {r=0.78, g=0.38, b=0.08},
 		width = 38,
@@ -84,7 +84,7 @@ data:extend(
 	order="a-b-a",
 	map_color = {r=0.78, g=0.38, b=0.08},
 	infinite=true,
-	minimum=500,
+	minimum=300,
 	normal=1500,
 	maximum=6000,
 	minable =
@@ -101,7 +101,7 @@ data:extend(
 	{
 	  sheet =
 	  {
-		filename = "__angelsinfiniteores__/graphics/entity/ores/ore-5-inf.png",
+		filename = "__angelsinfiniteores__/graphics/entity/ores-inf/ore-5-inf.png",
 		priority = "extra-high",
 		tint = {r=0.78, g=0.38, b=0.08},
 		width = 38,
