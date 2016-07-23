@@ -1,7 +1,8 @@
 data.raw["resource"]["uraninite"].stages={sheet=
 		{
 		filename = "__angelsinfiniteores__/graphics/entity/ores/ore-6.png",
-		tint = {r=0.000, g=0.238, b=0.118},
+		--tint = {r=0.000, g=0.238, b=0.118},
+		tint = {r=0.1, g=0.40, b=0.2},
         priority = "extra-high",
         width = 38,
         height = 38,
@@ -10,7 +11,8 @@ data.raw["resource"]["uraninite"].stages={sheet=
         }
 }
 
-data.raw["resource"]["uraninite"].map_color={r=0.60, g=0.28, b=0.34}
+data.raw["resource"]["uraninite"].map_color={r=0.1, g=0.40, b=0.2}
+data.raw["item"]["uraninite"].icon="__angelsinfiniteores__/graphics/icons/up-uraninite.png"
 
 if not angelsmods.ores.enablersomode then
 data:extend(
@@ -23,7 +25,7 @@ data:extend(
     },
 	{
 	type = "noise-layer",
-	name = "infinite-uraninite-ore"
+	name = "infinite-uraninite"
 	},
     {
     type = "resource",
@@ -46,7 +48,7 @@ data:extend(
     selection_box = {{ -0.5, -0.5}, {0.5, 0.5}},
     autoplace =
     {
-      control = "uraninite",
+      control = "infinite-uraninite",
       sharpness = 1,
       richness_multiplier = 8000,
       richness_base = 250,
@@ -60,7 +62,7 @@ data:extend(
         },
         {
           influence = 0.6,
-          noise_layer = "uraninite",
+          noise_layer = "infinite-uraninite",
           noise_octaves_difference = -3,
           noise_persistence = 0.45,
           starting_area_weight_optimal = 0,
@@ -126,14 +128,14 @@ data:extend(
       {
     	filename = "__angelsinfiniteores__/graphics/entity/ores-inf/ore-6-inf.png",
         priority = "extra-high",
-		tint = {r=0.000, g=0.238, b=0.118},
+		tint = {r=0.1, g=0.40, b=0.2},
         width = 38,
         height = 38,
         frame_count = 8,
         variation_count = 1
       }
     },
-    map_color = {r=0.000, g=0.238, b=0.118}
+    map_color = {r=0.1, g=0.40, b=0.2},
   },
 })
 else
@@ -165,14 +167,14 @@ data:extend(
       {
     	filename = "__angelsinfiniteores__/graphics/entity/ores-inf/ore-6-inf.png",
         priority = "extra-high",
-		tint = {r=0.000, g=0.238, b=0.118},
+		tint = {r=0.1, g=0.40, b=0.2},
         width = 38,
         height = 38,
         frame_count = 8,
         variation_count = 1
       }
     },
-    map_color = {r=0.000, g=0.238, b=0.118}
+    map_color = {r=0.1, g=0.40, b=0.2},
   },
 })
 end

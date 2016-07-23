@@ -1,7 +1,8 @@
 data.raw["resource"]["fluorite"].stages={sheet=
 		{
 		filename = "__angelsinfiniteores__/graphics/entity/ores/ore-7.png",
-		tint = {r=0.60, g=0.28, b=0.34},
+		--tint = {r=0.60, g=0.28, b=0.34},
+		tint = {r=0.80, g=0.50, b=0.60},
         priority = "extra-high",
         width = 38,
         height = 38,
@@ -10,7 +11,8 @@ data.raw["resource"]["fluorite"].stages={sheet=
         }
 }
 
-data.raw["resource"]["fluorite"].map_color={r=0.60, g=0.28, b=0.34}
+data.raw["resource"]["fluorite"].map_color={r=0.80, g=0.50, b=0.60}
+data.raw["item"]["fluorite"].icon="__angelsinfiniteores__/graphics/icons/up-fluorite.png"
 
 if not angelsmods.ores.enablersomode then
 data:extend(
@@ -46,7 +48,7 @@ data:extend(
     selection_box = {{ -0.5, -0.5}, {0.5, 0.5}},
     autoplace =
     {
-      control = "fluorite",
+      control = "infinite-fluorite",
       sharpness = 1,
       richness_multiplier = 10000,
       richness_base = 250,
@@ -60,7 +62,7 @@ data:extend(
         },
         {
           influence = 0.6,
-          noise_layer = "fluorite",
+          noise_layer = "infinite-fluorite",
           noise_octaves_difference = -3,
           noise_persistence = 0.45,
           starting_area_weight_optimal = 0,
@@ -126,7 +128,7 @@ data:extend(
       {
     	--filename = "__angelsinfiniteores__/graphics/entity/ores-inf/fluorite-inf.png",
 		filename = "__angelsinfiniteores__/graphics/entity/ores-inf/ore-7-inf.png",
-		tint = {r=0.60, g=0.28, b=0.34},
+		tint = {r=0.80, g=0.50, b=0.60},
         priority = "extra-high",
         width = 38,
         height = 38,
@@ -135,7 +137,7 @@ data:extend(
       }
     },
     --map_color = {r=0.205, g=0.000, b=0.205}
-	map_color = {r=0.60, g=0.28, b=0.34},
+	map_color = {r=0.80, g=0.50, b=0.60},
   }
 })
 else
@@ -167,7 +169,7 @@ data:extend(
       {
     	--filename = "__angelsinfiniteores__/graphics/entity/ores-inf/fluorite-inf.png",
 		filename = "__angelsinfiniteores__/graphics/entity/ores-inf/ore-7-inf.png",
-		tint = {r=0.60, g=0.28, b=0.34},
+		tint = {r=0.80, g=0.50, b=0.60},
         priority = "extra-high",
         width = 38,
         height = 38,
@@ -176,7 +178,7 @@ data:extend(
       }
     },
     --map_color = {r=0.205, g=0.000, b=0.205}
-	map_color = {r=0.60, g=0.28, b=0.34},
+	map_color = {r=0.80, g=0.50, b=0.60},
   }
 })
 end

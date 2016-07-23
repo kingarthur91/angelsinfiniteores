@@ -11,6 +11,7 @@ data.raw["resource"]["uranium-ore"].stages={sheet=
 }
 
 data.raw["resource"]["uranium-ore"].map_color={r=0.24, g=0.45, b=0.23}
+data.raw["item"]["uranium-ore"].icon="__angelsinfiniteores__/graphics/icons/nuc-uranium-ore.png"
 
 if not angelsmods.ores.enablersomode then
 data:extend(

@@ -2,20 +2,21 @@ data:extend(
 {
   {
     type = "noise-layer",
-    name = "angels-fissure"
+    name = "angels-natural-gas"
   },
   {
     type = "autoplace-control",
-    name = "angels-fissure",
+    name = "angels-natural-gas",
     richness = true,
     order = "b-e"
   },
   {
     type = "resource",
-    name = "angels-fissure",
+    name = "angels-natural-gas",
     icon = "__base__/graphics/icons/crude-oil.png",
     flags = {"placeable-neutral"},
-    category = "angels-fissure",
+    category = "basic-fluid",
+    --category = "angels-natural-gas",
     order="a-b-a",
     infinite = true,
     minimum = 2500,
@@ -28,18 +29,18 @@ data:extend(
       {
         {
           type = "fluid",
-          name = "thermal-water",
+          name = "gas-natural-1",
           amount_min = 2,
           amount_max = 2,
           probability = 1
         },
       }
     },
-    collision_box = {{ -4.4, -4.4}, {4.4, 4.4}},
-    selection_box = {{ -2.5, -2.5}, {2.5, 2.5}},
+    collision_box = {{ -1.4, -1.4}, {1.4, 1.4}},
+    selection_box = {{ -0.5, -0.5}, {0.5, 0.5}},
     autoplace =
     {
-      control = "angels-fissure",
+      control = "angels-natural-gas",
       sharpness = 0.98,
       max_probability = 0.04,
       richness_base = 6000,
@@ -49,9 +50,9 @@ data:extend(
       peaks =
       {
         {
-          noise_layer = "angels-fissure",
-          noise_octaves_difference = -1.5,
-          noise_persistence = 0.3,
+          noise_layer = "angels-natural-gas",
+          noise_octaves_difference = -2,
+          noise_persistence = 0.4,
         }
       }
     },
@@ -60,16 +61,16 @@ data:extend(
     {
       sheet =
       {
-        filename = "__angelsinfiniteores__/graphics/entity/patches/fissure.png",
-		tint = {r = 0.65, g = 0.4, b = 0.15},
+        filename = "__angelsinfiniteores__/graphics/entity/patches/gas.png",
+		tint = {r = 0.70, g = 0.90, b = 0.60},
         priority = "extra-high",
-        width = 256,
-        height = 256,
+        width = 64,
+        height = 64,
         frame_count = 4,
         variation_count = 1
       }
     },
-    map_color = {r=1, g=0.5, b=0},
+    map_color = {r = 0.70, g = 0.90, b = 0.60},
     map_grid = false
   }
 })
