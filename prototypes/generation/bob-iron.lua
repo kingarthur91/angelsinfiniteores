@@ -5,7 +5,8 @@ data:extend(
     type = "autoplace-control",
     name = "infinite-iron-ore",
     richness = true,
-    order = "b-b"
+    order = "b-b",
+	category = "resource",
   },
   {
     type = "noise-layer",
@@ -15,10 +16,11 @@ data:extend(
     type = "resource",
     name = "infinite-iron-ore",
     icon = "__base__/graphics/icons/iron-ore.png",
+	icon_size = 32,
     flags = {"placeable-neutral"},
     order="a-b-a",
 	infinite=true,
-    minimum=300,
+    minimum=angelsmods.ores.yield,
 	normal=1500,
     maximum=6000,
     minable =
@@ -30,67 +32,39 @@ data:extend(
     },
     collision_box = {{ -0.1, -0.1}, {0.1, 0.1}},
     selection_box = {{ -0.5, -0.5}, {0.5, 0.5}},
-    autoplace =
-    {
-      control = "infinite-iron-ore",
-      sharpness = 1,
-      richness_multiplier = 13000,
-      richness_base = 350,
-      size_control_multiplier = 0.06,
-      peaks = {
-        {
-          influence = 0.2,
-          starting_area_weight_optimal = 0,
-          starting_area_weight_range = 0,
-          starting_area_weight_max_range = 2,
-        },
-        {
-          influence = 0.65,
-          noise_layer = "iron-ore",
-          noise_octaves_difference = -1.9,
-          noise_persistence = 0.3,
-          starting_area_weight_optimal = 0,
-          starting_area_weight_range = 0,
-          starting_area_weight_max_range = 2,
-        },
-        {
-          influence = 0.3,
-          starting_area_weight_optimal = 1,
-          starting_area_weight_range = 0,
-          starting_area_weight_max_range = 2,
-        },
-        {
-          influence = 0.55,
-          noise_layer = "infinite-iron-ore",
-          noise_octaves_difference = -2.3,
-          noise_persistence = 0.4,
-          starting_area_weight_optimal = 1,
-          starting_area_weight_range = 0,
-          starting_area_weight_max_range = 2,
-        },
-        {
-          influence = -0.2,
-          max_influence = 0,
-          noise_layer = "copper-ore",
-          noise_octaves_difference = -2.3,
-          noise_persistence = 0.45,
-        },
-        {
-          influence = -0.2,
-          max_influence = 0,
-          noise_layer = "coal",
-          noise_octaves_difference = -2.3,
-          noise_persistence = 0.45,
-        },
-        {
-          influence = -0.2,
-          max_influence = 0,
-          noise_layer = "stone",
-          noise_octaves_difference = -3,
-          noise_persistence = 0.45,
-        },
-      },
-    },
+	autoplace =
+	{
+		control = "infinite-iron-ore",
+		sharpness = 1,
+		richness_multiplier = 5000,
+		richness_multiplier_distance_bonus = 20,
+		richness_base = 2000,
+		coverage = 0.01,
+		peaks = {
+			{
+				noise_layer = "infinite-iron-ore",
+				noise_octaves_difference = -2.5,
+				noise_persistence = 0.3,
+				starting_area_weight_optimal = 0,
+				starting_area_weight_range = 0,
+				starting_area_weight_max_range = 2,
+			},
+			{
+				noise_layer = "infinite-iron-ore",
+				noise_octaves_difference = -2,
+				noise_persistence = 0.3,
+				starting_area_weight_optimal = 1,
+				starting_area_weight_range = 0,
+				starting_area_weight_max_range = 2,
+			},
+			{
+				influence = 0.15,
+				starting_area_weight_optimal = 0,
+				starting_area_weight_range = 0,
+				starting_area_weight_max_range = 2,
+			}
+		}
+	},
     stage_counts = {1},
     stages =
     {
@@ -115,10 +89,11 @@ data:extend(
     type = "resource",
     name = "infinite-iron-ore",
     icon = "__base__/graphics/icons/iron-ore.png",
+	icon_size = 32,
     flags = {"placeable-neutral"},
     order="a-b-a",
 	infinite=true,
-    minimum=300,
+    minimum=angelsmods.ores.yield,
 	normal=1500,
     maximum=6000,
     minable =
