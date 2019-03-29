@@ -22,8 +22,7 @@ if angelsmods.ores.enableinfiniteuraniumpower then
 		type = "autoplace-control",
 		name = "infinite-fluorite",
 		richness = true,
-		order = "b-f",
-		category = "resource",
+		order = "b-f"
 		},
 		{
 		type = "noise-layer",
@@ -33,7 +32,6 @@ if angelsmods.ores.enableinfiniteuraniumpower then
 		type = "resource",
 		name = "infinite-fluorite",
 		icon = "__angelsinfiniteores__/graphics/icons/up-fluorite.png",
-		icon_size = 32,
 		flags = {"placeable-neutral"},
 		order="a-b-f",
 		infinite=true,
@@ -114,7 +112,6 @@ if angelsmods.ores.enableinfiniteuraniumpower then
 		type = "resource",
 		name = "infinite-fluorite",
 		icon = "__angelsinfiniteores__/graphics/icons/up-fluorite.png",
-		icon_size = 32,
 		flags = {"placeable-neutral"},
 		order="a-b-f",
 		infinite=true,

@@ -20,8 +20,7 @@ if angelsmods.ores.enableinfiniteores and angelsmods.ores.enableinfinitedarkmatt
 		type = "autoplace-control",
 		name = "infinite-tenemut",
 		richness = true,
-		order = "b-e",
-		category = "resource",
+		order = "b-e"
 		},
 		{
 		type = "noise-layer",
@@ -31,7 +30,6 @@ if angelsmods.ores.enableinfiniteores and angelsmods.ores.enableinfinitedarkmatt
 		type = "resource",
 		name = "infinite-tenemut",
 		icon = "__dark-matter-replicators__/graphics/icons/tenemut.png",
-		icon_size = 32,
 		flags = {"placeable-neutral"},
 		order="a-b-e",
 		infinite=true,
@@ -112,7 +110,6 @@ if angelsmods.ores.enableinfiniteores and angelsmods.ores.enableinfinitedarkmatt
 		type = "resource",
 		name = "infinite-tenemut",
 		icon = "__dark-matter-replicators__/graphics/icons/tenemut.png",
-		icon_size = 32,
 		flags = {"placeable-neutral"},
 		order="a-b-e",
 		infinite=true,

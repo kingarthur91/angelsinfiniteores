@@ -8,7 +8,6 @@ if angelsmods.ores.enableinfiniteyuoki then
 		name = "infinite-y-res1",
 		richness = true,
 		order = "y-ore",
-		category = "resource",
 		},
 		{
 		type = "noise-layer",
@@ -18,7 +17,6 @@ if angelsmods.ores.enableinfiniteyuoki then
 		type = "resource",
 		name = "infinite-y-res1",
 		icon = "__Yuoki__/graphics/icons/uni-com-pur.png",
-		icon_size = 32,
 		flags = {"placeable-neutral"},
 		order="a-b-d",
 		infinite=true,
@@ -98,7 +96,6 @@ if angelsmods.ores.enableinfiniteyuoki then
 		type = "resource",
 		name = "infinite-y-res1",
 		icon = "__Yuoki__/graphics/icons/uni-com-pur.png",
-		icon_size = 32,
 		flags = {"placeable-neutral"},
 		order="a-b-d",
 		infinite=true,

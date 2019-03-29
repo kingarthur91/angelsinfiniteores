@@ -22,8 +22,7 @@ if angelsmods.ores.enableinfiniteuraniumpower then
 		type = "autoplace-control",
 		name = "infinite-uraninite",
 		richness = true,
-		order = "b-e",
-		category = "resource",
+		order = "b-e"
 		},
 		{
 		type = "noise-layer",
@@ -33,7 +32,6 @@ if angelsmods.ores.enableinfiniteuraniumpower then
 		type = "resource",
 		name = "infinite-uraninite",
 		icon = "__angelsinfiniteores__/graphics/icons/up-uraninite.png",
-		icon_size = 32,
 		flags = {"placeable-neutral"},
 		order="a-b-e",
 		infinite=true,
@@ -114,7 +112,6 @@ if angelsmods.ores.enableinfiniteuraniumpower then
 		type = "resource",
 		name = "infinite-uraninite",
 		icon = "__angelsinfiniteores__/graphics/icons/up-uraninite.png",
-		icon_size = 32,
 		flags = {"placeable-neutral"},
 		order="a-b-e",
 		infinite=true,
