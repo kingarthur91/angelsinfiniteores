@@ -424,7 +424,7 @@ if bobmods and bobmods.ores then
 				minimum = angelsmods.ores.yield,
 				normal = 1500,
 				maximum = 6000,
-				acid_to_mine = "sulfuric-acid",
+				acid_to_mine = "water",
 				output_name = "sulfur",
 				output_min = 1,
 				output_max = 1,

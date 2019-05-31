@@ -19,6 +19,7 @@ end
 
 --LOAD RESOURCE GENERATOR
 if not angelsmods.functions.make_resource then
+	require("prototypes.generation.resource-generator")
 	require("prototypes.generation.resource-builder")
 end
 

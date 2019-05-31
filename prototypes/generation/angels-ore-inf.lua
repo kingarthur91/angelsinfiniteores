@@ -3,10 +3,10 @@ if angelsmods.refining then
 		name = "infinite-angels-ore1",
 		get = "angels-ore1",
 		order = "b",
-		sheet = 2,
+		sheet = 6,
 		infinite = true,
 		glow = true,
-		var = 2,
+		var = 6,
 		map_color = {r=0.26, g=0.30, b=0.39},
 		tint = {r=0.26, g=0.30, b=0.39},
 		mining_time = 1,
@@ -25,11 +25,6 @@ if angelsmods.refining then
 			base_density = 5,
 			regular_rq_factor_multiplier = 0.3,
 			starting_rq_factor_multiplier = 0.5,
-			-- base_spots_per_km2 = 1.8,
-			-- random_probability = 1/48,
-			-- random_spot_size_minimum = 1,
-			-- random_spot_size_maximum = 1,
-			-- additional_richness = 100			
 		}
 	})
 
@@ -59,11 +54,6 @@ if angelsmods.refining then
 			base_density = 5,
 			regular_rq_factor_multiplier = 0.3,
 			starting_rq_factor_multiplier = 0.5,
-			-- base_spots_per_km2 = 1.8,
-			-- random_probability = 1/48,
-			-- random_spot_size_minimum = 1,
-			-- random_spot_size_maximum = 1,
-			-- additional_richness = 100			
 		}
 	})
 
@@ -93,11 +83,6 @@ if angelsmods.refining then
 			base_density = 5,
 			regular_rq_factor_multiplier = 0.3,
 			starting_rq_factor_multiplier = 0.5,
-			-- base_spots_per_km2 = 1.8,
-			-- random_probability = 1/48,
-			-- random_spot_size_minimum = 1,
-			-- random_spot_size_maximum = 1,
-			-- additional_richness = 100			
 		}
 	})
 
@@ -127,11 +112,6 @@ if angelsmods.refining then
 			base_density = 5,
 			regular_rq_factor_multiplier = 0.3,
 			starting_rq_factor_multiplier = 0.5,
-			-- base_spots_per_km2 = 1.8,
-			-- random_probability = 1/48,
-			-- random_spot_size_minimum = 1,
-			-- random_spot_size_maximum = 1,
-			-- additional_richness = 100			
 		}
 	})
 
@@ -139,10 +119,10 @@ if angelsmods.refining then
 		name = "infinite-angels-ore5",
 		get = "angels-ore5",
 		order = "b",
-		sheet = 1,
+		sheet = 7,
 		infinite = true,
 		glow = true,
-		var = 1,
+		var = 7,
 		map_color = {r=0.68, g=0.18, b=0.16},
 		tint = {r=0.68, g=0.18, b=0.16},
 		mining_time = 2.5,
@@ -161,11 +141,6 @@ if angelsmods.refining then
 			base_density = 5,
 			regular_rq_factor_multiplier = 0.3,
 			starting_rq_factor_multiplier = 0.5,
-			-- base_spots_per_km2 = 1.8,
-			-- random_probability = 1/48,
-			-- random_spot_size_minimum = 1,
-			-- random_spot_size_maximum = 1,
-			-- additional_richness = 100			
 		}
 	})
 
@@ -173,10 +148,10 @@ if angelsmods.refining then
 		name = "infinite-angels-ore6",
 		get = "angels-ore6",
 		order = "b",
-		sheet = 3,
+		sheet = 8,
 		infinite = true,
 		glow = true,
-		var = 3,
+		var = 8,
 		map_color = {r = 0.75, g = 0.5, b = 0.25},
 		tint = {r = 0.75, g = 0.5, b = 0.25},
 		mining_time = 2.5,
@@ -195,11 +170,6 @@ if angelsmods.refining then
 			base_density = 5,
 			regular_rq_factor_multiplier = 0.3,
 			starting_rq_factor_multiplier = 0.5,
-			-- base_spots_per_km2 = 1.8,
-			-- random_probability = 1/48,
-			-- random_spot_size_minimum = 1,
-			-- random_spot_size_maximum = 1,
-			-- additional_richness = 100			
 		}
 	})
 end

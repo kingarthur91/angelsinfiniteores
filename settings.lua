@@ -5,7 +5,7 @@ data:extend(
 	name = "angels-infinite-yield",
 	setting_type = "startup",
 	default_value = 20,
-	minimum_value = 0,
+	minimum_value = 1,
 	maximum_value = 100,
 	order = "a",
    },

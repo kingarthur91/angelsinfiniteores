@@ -1,6 +1,6 @@
-local noise = require("noise");
-local tne = noise.to_noise_expression;
-local resource_autoplace = require("resource-autoplace");
+-- local noise = require("noise");
+-- local tne = noise.to_noise_expression;
+-- local resource_autoplace = require("resource-autoplace");
 
 --Create autoplace
 local function make_resautoplace(input)
@@ -172,7 +172,7 @@ local function make_resgfx(input)
 			--log(serpent.block(stages_copy))
 			return stages_copy
 		else
-			--Sheet used for Copper Ore, angels-ore3 (Stiratite), angels-ore5 (Rubyte)
+			--Sheet used for Copper Ore, angels-ore3 (Stiratite)
 			if input.sheet == 1 then
 				return
 				{
@@ -200,7 +200,7 @@ local function make_resgfx(input)
 					}
 				}
 			end
-			--Sheet used for Coal, angels-ore2 (Saphirite)
+			--Sheet used for Coal
 			if input.sheet == 2 then
 				return
 				{
@@ -228,7 +228,7 @@ local function make_resgfx(input)
 					}
 				}
 			end
-			--Sheet used for Iron Ore, angels-ore4 (Crotinium), angels-ore6 (Bobmonium)
+			--Sheet used for Iron Ore, angels-ore4 (Crotinium)
 			if input.sheet == 3 then
 				return
 				{
@@ -300,6 +300,117 @@ local function make_resgfx(input)
 						variation_count = input.variation_count,
 						hr_version = {
 							filename = "__angelsinfiniteores__/graphics/entity/ores/ore-15-hr.png",
+							priority = "extra-high",
+							tint = input.tint,
+							width = 128,
+							height = 128,
+							line_length = 8,
+							frame_count = input.frame_count,
+							variation_count = input.variation_count,
+							scale = 0.5
+						}
+					}
+				}
+			end
+			--Sheet used for Coal, angels-ore1 (Saphirite)
+			if input.sheet == 6 then
+				return
+				{
+					sheet =
+					{
+						filename = "__angelsinfiniteores__/graphics/entity/ores/ore-16-lr.png",
+						priority = "extra-high",
+						tint = input.tint,
+						width = 64,
+						height = 64,
+						line_length = 8,
+						frame_count = input.frame_count,
+						variation_count = input.variation_count,
+						hr_version = {
+							filename = "__angelsinfiniteores__/graphics/entity/ores/ore-16-hr.png",
+							priority = "extra-high",
+							tint = input.tint,
+							width = 128,
+							height = 128,
+							line_length = 8,
+							frame_count = input.frame_count,
+							variation_count = input.variation_count,
+							scale = 0.5
+						}
+					}
+				}
+			end
+			--Sheet used for angels-ore5 (Rubyte)
+			if input.sheet == 7 then
+				return
+				{
+					sheet =
+					{
+						filename = "__angelsinfiniteores__/graphics/entity/ores/ore-17-lr.png",
+						priority = "extra-high",
+						tint = input.tint,
+						width = 64,
+						height = 64,
+						line_length = 8,
+						frame_count = input.frame_count,
+						variation_count = input.variation_count,
+						hr_version = {
+							filename = "__angelsinfiniteores__/graphics/entity/ores/ore-17-hr.png",
+							priority = "extra-high",
+							tint = input.tint,
+							width = 128,
+							height = 128,
+							line_length = 8,
+							frame_count = input.frame_count,
+							variation_count = input.variation_count,
+							scale = 0.5
+						}
+					}
+				}
+			end
+			--Sheet used for angels-ore6 (Bobmonium)
+			if input.sheet == 8 then
+				return
+				{
+					sheet =
+					{
+						filename = "__angelsinfiniteores__/graphics/entity/ores/ore-18-lr.png",
+						priority = "extra-high",
+						tint = input.tint,
+						width = 64,
+						height = 64,
+						line_length = 8,
+						frame_count = input.frame_count,
+						variation_count = input.variation_count,
+						hr_version = {
+							filename = "__angelsinfiniteores__/graphics/entity/ores/ore-18-hr.png",
+							priority = "extra-high",
+							tint = input.tint,
+							width = 128,
+							height = 128,
+							line_length = 8,
+							frame_count = input.frame_count,
+							variation_count = input.variation_count,
+							scale = 0.5
+						}
+					}
+				}
+			end
+			if input.sheet == 9 then
+				return
+				{
+					sheet =
+					{
+						filename = "__angelsinfiniteores__/graphics/entity/ores/ore-19-lr.png",
+						priority = "extra-high",
+						tint = input.tint,
+						width = 64,
+						height = 64,
+						line_length = 8,
+						frame_count = input.frame_count,
+						variation_count = input.variation_count,
+						hr_version = {
+							filename = "__angelsinfiniteores__/graphics/entity/ores/ore-19-hr.png",
 							priority = "extra-high",
 							tint = input.tint,
 							width = 128,
@@ -495,7 +606,6 @@ local function make_resglow(input)
 						}
 					}
 				}
-
 			end
 			if input.sheet == 4 then
 				input.gfx_ani_per = 5
@@ -532,7 +642,150 @@ local function make_resglow(input)
 						}
 					}
 				}
-
+			end
+			if input.sheet == 5 then
+				input.gfx_ani_per = 5
+				input.gfx_ani_dev = 1
+				input.gfx_dark_mul = 3.6
+				input.gfx_alpha_min = 0.2
+				input.gfx_alpha_max = 0.3
+				return
+				{
+					sheet =
+					{
+						filename = "__angelsinfiniteores__/graphics/entity/ores/ore-15-lr-glow.png",
+						priority = "extra-high",
+						tint = input.tint,
+						width = 64,
+						height = 64,
+						line_length = 8,
+						frame_count = input.frame_count,
+						variation_count = input.variation_count,
+						blend_mode = "additive",
+						flags = {"light"},
+						hr_version = {
+							filename = "__angelsinfiniteores__/graphics/entity/ores/ore-15-hr-glow.png",
+							priority = "extra-high",
+							tint = input.tint,
+							width = 128,
+							height = 128,
+							line_length = 8,
+							frame_count = input.frame_count,
+							variation_count = input.variation_count,
+							scale = 0.5,
+							blend_mode = "additive",
+							flags = {"light"},
+						}
+					}
+				}
+			end
+			if input.sheet == 6 then
+				input.gfx_ani_per = 4
+				input.gfx_ani_dev = 1
+				input.gfx_dark_mul = 2
+				input.gfx_alpha_min = 0.2
+				input.gfx_alpha_max = 0.3
+				return
+				{
+					sheet =
+					{
+						filename = "__angelsinfiniteores__/graphics/entity/ores/ore-16-lr-glow.png",
+						priority = "extra-high",
+						tint = input.tint,
+						width = 64,
+						height = 64,
+						line_length = 8,
+						frame_count = input.frame_count,
+						variation_count = input.variation_count,
+						blend_mode = "additive",
+						flags = {"light"},
+						hr_version = {
+							filename = "__angelsinfiniteores__/graphics/entity/ores/ore-16-hr-glow.png",
+							priority = "extra-high",
+							tint = input.tint,
+							width = 128,
+							height = 128,
+							line_length = 8,
+							frame_count = input.frame_count,
+							variation_count = input.variation_count,
+							scale = 0.5,
+							blend_mode = "additive",
+							flags = {"light"},
+						}
+					}
+				}
+			end
+			if input.sheet == 7 then
+				input.gfx_ani_per = 2
+				input.gfx_ani_dev = 1
+				input.gfx_dark_mul = 3
+				input.gfx_alpha_min = 0.2
+				input.gfx_alpha_max = 0.3
+				return
+				{
+					sheet =
+					{
+						filename = "__angelsinfiniteores__/graphics/entity/ores/ore-17-lr-glow.png",
+						priority = "extra-high",
+						tint = input.tint,
+						width = 64,
+						height = 64,
+						line_length = 8,
+						frame_count = input.frame_count,
+						variation_count = input.variation_count,
+						blend_mode = "additive",
+						flags = {"light"},
+						hr_version = {
+							filename = "__angelsinfiniteores__/graphics/entity/ores/ore-17-hr-glow.png",
+							priority = "extra-high",
+							tint = input.tint,
+							width = 128,
+							height = 128,
+							line_length = 8,
+							frame_count = input.frame_count,
+							variation_count = input.variation_count,
+							scale = 0.5,
+							blend_mode = "additive",
+							flags = {"light"},
+						}
+					}
+				}
+			end
+			if input.sheet == 8 then
+				input.gfx_ani_per = 4
+				input.gfx_ani_dev = 1
+				input.gfx_dark_mul = 3
+				input.gfx_alpha_min = 0.2
+				input.gfx_alpha_max = 0.3
+				return
+				{
+					sheet =
+					{
+						filename = "__angelsinfiniteores__/graphics/entity/ores/ore-18-lr-glow.png",
+						priority = "extra-high",
+						tint = input.tint,
+						width = 64,
+						height = 64,
+						line_length = 8,
+						frame_count = input.frame_count,
+						variation_count = input.variation_count,
+						blend_mode = "additive",
+						flags = {"light"},
+						hr_version = {
+							filename = "__angelsinfiniteores__/graphics/entity/ores/ore-18-hr-glow.png",
+							priority = "extra-high",
+							tint = input.tint,
+							width = 128,
+							height = 128,
+							line_length = 8,
+							frame_count = input.frame_count,
+							variation_count = input.variation_count,
+							scale = 0.5,
+							blend_mode = "additive",
+							flags = {"light"},
+						}
+					}
+				}
 			end
 		end
 		if input.type == "fluid" then
@@ -613,7 +866,7 @@ function angelsmods.functions.make_resource()
 				input.minimum = 300
 				input.output_probability = 1
 			end
-			--Set defaults for infinite reouces normal and maximum
+			--Set defaults for infinite resouces normal and maximum
 			input.normal = 1500
 			input.maximum = 6000
 			--Set mining hardness
@@ -714,6 +967,29 @@ function angelsmods.functions.make_resource()
 				}
 			})
 		end
+		if input.get then
+			input.alt_name = input.get
+		else
+			input.alt_name = input.name
+		end	
+		
+		resource_generator.setup_resource_autoplace_data(input.name,
+		{
+		name = input.alt_name,
+		order = input.order,
+		base_density = input.autoplace.base_density,
+		has_starting_area_placement = input.autoplace.starting_area,
+		resource_index = input.autoplace.resource_index,
+		regular_rq_factor_multiplier = input.autoplace.regular_rq_factor_multiplier;
+		starting_rq_factor_multiplier = input.autoplace.starting_rq_factor_multiplier;
+		base_spots_per_km2 = input.autoplace.base_spots_per_km2,
+		random_probability = input.autoplace.random_probability,
+		random_spot_size_minimum = input.autoplace.random_spot_size_minimum,
+		random_spot_size_maximum = input.autoplace.random_spot_size_maximum,
+		additional_richness = input.autoplace.additional_richness,
+		richness_post_multiplier = input.richness_post_multiplier
+		}
+		)
 	end
 end
 
@@ -722,11 +998,19 @@ function angelsmods.functions.remove_resource(resource)
 	if data.raw.resource[resource] then
 		data.raw.resource[resource] = nil
 		data.raw["autoplace-control"][resource] = nil
+		if resource_generator and resource_generator.resource_indexes[resource] then
+			resource_generator.resource_indexes[resource] = nil
+			resource_generator.resource_autoplace_data[resource] = nil
+		end
 		log(serpent.block(resource))
 	end
 	if data.raw.resource["infinite-"..resource] then
 		data.raw.resource["infinite-"..resource] = nil
 		data.raw["autoplace-control"]["infinite-"..resource] = nil
+		if resource_generator and resource_generator.resource_indexes["infinite-"..resource] then
+			resource_generator.resource_indexes["infinite-"..resource] = nil
+			resource_generator.resource_autoplace_data["infinite-"..resource] = nil
+		end
 	end
 	for r, subdir in pairs(angelsmods.functions.store) do
 		for r, input in pairs(subdir) do
@@ -771,35 +1055,56 @@ function angelsmods.functions.update_autoplace()
 				--Add autoplace to resource
 				if data.raw.resource[input.name] then
 					data.raw.resource[input.name].order = "a-"..input.order
-					data.raw.resource[input.name].			autoplace = resource_autoplace.resource_autoplace_settings{
-							name = input.name,
-							order = input.order,
-							base_density = input.autoplace.base_density,
-							has_starting_area_placement = input.autoplace.starting_area,
-							resource_index = input.autoplace.resource_index,
-							regular_rq_factor_multiplier = input.autoplace.regular_rq_factor_multiplier;
-							starting_rq_factor_multiplier = input.autoplace.starting_rq_factor_multiplier;
-							base_spots_per_km2 = input.autoplace.base_spots_per_km2,
-							random_probability = input.autoplace.random_probability,
-							random_spot_size_minimum = input.autoplace.random_spot_size_minimum,
-							random_spot_size_maximum = input.autoplace.random_spot_size_maximum,
-							additional_richness = input.autoplace.additional_richness,
-							richness_post_multiplier = input.richness_post_multiplier
-						}
-						if input.acid_to_mine and (angelsmods.ores and angelsmods.ores.enablefluidreq) then
-							if angelsmods.petrochem then
-								if angelsmods.trigger.enableacids then
-									input.acid_req = input.acid_to_mine
-								else
-									input.acid_req = "liquid-sulfuric-acid"
-								end
+					-- data.raw.resource[input.name].autoplace = resource_autoplace.resource_autoplace_settings{
+							-- name = input.name,
+							-- order = input.order,
+							-- base_density = input.autoplace.base_density,
+							-- has_starting_area_placement = input.autoplace.starting_area,
+							-- resource_index = input.autoplace.resource_index,
+							-- regular_rq_factor_multiplier = input.autoplace.regular_rq_factor_multiplier;
+							-- starting_rq_factor_multiplier = input.autoplace.starting_rq_factor_multiplier;
+							-- base_spots_per_km2 = input.autoplace.base_spots_per_km2,
+							-- random_probability = input.autoplace.random_probability,
+							-- random_spot_size_minimum = input.autoplace.random_spot_size_minimum,
+							-- random_spot_size_maximum = input.autoplace.random_spot_size_maximum,
+							-- additional_richness = input.autoplace.additional_richness,
+							-- richness_post_multiplier = input.richness_post_multiplier
+					-- }
+					resource_generator.setup_resource_autoplace_data(input.name,
+					{
+					name = input.name,
+					order = input.order,
+					base_density = input.autoplace.base_density,
+					has_starting_area_placement = input.autoplace.starting_area,
+					resource_index = input.autoplace.resource_index,
+					regular_rq_factor_multiplier = input.autoplace.regular_rq_factor_multiplier;
+					starting_rq_factor_multiplier = input.autoplace.starting_rq_factor_multiplier;
+					base_spots_per_km2 = input.autoplace.base_spots_per_km2,
+					random_probability = input.autoplace.random_probability,
+					random_spot_size_minimum = input.autoplace.random_spot_size_minimum,
+					random_spot_size_maximum = input.autoplace.random_spot_size_maximum,
+					additional_richness = input.autoplace.additional_richness,
+					richness_post_multiplier = input.richness_post_multiplier
+					}
+					)
+					if input.acid_to_mine and (angelsmods.ores and angelsmods.ores.enablefluidreq) then
+						if angelsmods.petrochem then
+							if angelsmods.trigger.enableacids then
+								input.acid_req = input.acid_to_mine
+							else
+								input.acid_req = "liquid-sulfuric-acid"
+							end
+						else
+							if data.raw.fluid[input.acid_to_mine] then
+								input.acid_req = input.acid_to_mine
 							else
 								input.acid_req = "sulfuric-acid"
 							end
-							data.raw.resource[input.name].minable.required_fluid = input.acid_req
-							log(serpent.block(input.acid_req))
-							log(serpent.block(data.raw.resource[input.name].minable.required_fluid))
 						end
+						data.raw.resource[input.name].minable.required_fluid = input.acid_req
+						log(serpent.block(input.acid_req))
+						log(serpent.block(data.raw.resource[input.name].minable.required_fluid))
+					end
 				end
 			end
 		end
@@ -807,6 +1112,7 @@ function angelsmods.functions.update_autoplace()
 end
 
 --UPDATE RESOURCES FROM STORE
+--RUN IN UPDATES
 function angelsmods.functions.update_resource()
 	--ZELOS GARBAGE COUNT
 	local totalcount = 0
@@ -840,6 +1146,7 @@ function angelsmods.functions.update_resource()
 end
 
 --CHECK RESOURCE_INDEX FOR ALL RESOURCES
+--DEBUG FUNCTION RUN IN UPDATES
 function angelsmods.functions.index_check()
 	--SET TABLE TO RETURN
 	angelsmods.functions.test = {}
