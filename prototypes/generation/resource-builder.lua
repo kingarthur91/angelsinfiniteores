@@ -844,6 +844,14 @@ end
 --CREATE RESOURCE FROM STORE
 function angelsmods.functions.make_resource()
 	for r, input in pairs(angelsmods.functions.store.make) do
+		ret_table = {
+			type = "resource",
+			flags = {"placeable-neutral"},
+			tree_removal_probability = 0.8,
+			tree_removal_max_distance = 32 * 32,
+			infinite_depletion_amount = 10,
+			resource_patch_search_radius = 12,
+		}
 		if not data.raw.resource[input.name] then
 			--Create Autopace for the resource
 			make_resautoplace(input)
@@ -909,73 +917,75 @@ function angelsmods.functions.make_resource()
 			if input.get then
 				input.map_color = data.raw.resource[input.get].map_color
 				if data.raw.resource[input.get] then
-					input.icon = data.raw.resource[input.get].icon
-					input.icon_size = data.raw.resource[input.get].icon_size
+					if data.raw.resource[input.get].icon_size then 
+						input.icon_size = data.raw.resource[input.get].icon_size 
+					else 
+						input.icon_size = 32 
+					end
+					if data.raw.resource[input.get].icon then
+						ret_table.icon = data.raw.resource[input.get].icon
+					end
+					if data.raw.resource[input.get].icons then
+						ret_table.icons = data.raw.resource[input.get].icons
+					end
 				end
 			else
 				input.icon_size = 32
 			end
-			-- log(serpent.block(input.acid_req))
-			-- log(serpent.block(input.acid_amount))
-			data:extend({
-				{
-					type = "resource",
-					name = input.name,
-					icon = input.icon,
-					icon_size = input.icon_size,
-					flags = {"placeable-neutral"},
-					category = input.category,
-					order = "a-"..input.order,
-					tree_removal_probability = 0.8,
-					tree_removal_max_distance = 32 * 32,
-					infinite_depletion_amount = 10,
-					resource_patch_search_radius = 12,
-					highlight = input.highlight,
-					infinite = input.infinite,
-					minimum = input.minimum,
-					normal = input.normal,
-					maximum = input.maximum,
-					minable =
+			if input.icon then
+				if not input.icon_size then
+					input.icon_size = 32
+				end					
+				ret_table.icons = {icon = input.icon, icon_size = input.icon_size}
+			end
+			ret_table.name = input.name
+			ret_table.icon_size = input.icon_size
+			ret_table.category = input.category
+			ret_table.order = "a-"..input.order
+			ret_table.highlight = input.highlight
+			ret_table.infinite = input.infinite
+			ret_table.minimum = input.minimum
+			ret_table.normal = input.normal
+			ret_table.maximum = input.maximum
+			ret_table.minable =
+			{
+				hardness = input.hardness,
+				mining_particle = input.particle,
+				mining_time = input.mining_time,
+				fluid_amount = input.acid_amount,
+				results = {
 					{
-						hardness = input.hardness,
-						mining_particle = input.particle,
-						mining_time = input.mining_time,
-						fluid_amount = input.acid_amount,
-						results = {
-							{
-								type = input.type,
-								name = input.output_name,
-								amount_min = input.output_min,
-								amount_max = input.output_max,
-								probability = input.output_probability,
-								temperature = input.temperature,
-							}
-						},
-					},
-					collision_box = input.collision_box,
-					selection_box = input.selection_box,
-					stage_counts = stages_count,
-					stages = make_resgfx(input),
-					stages_effect = make_resglow(input),
-					effect_animation_period = input.gfx_ani_per,
-					effect_animation_period_deviation = input.gfx_ani_dev,
-					effect_darkness_multiplier = input.gfx_dark_mul,
-					min_effect_alpha = input.gfx_alpha_min,
-					max_effect_alpha = input.gfx_alpha_max,
-					map_color = input.map_color,
-					map_grid = input.map_grid
-				}
-			})
+						type = input.type,
+						name = input.output_name,
+						amount_min = input.output_min,
+						amount_max = input.output_max,
+						probability = input.output_probability,
+						temperature = input.temperature,
+					}
+				},
+			}
+			ret_table.collision_box = input.collision_box
+			ret_table.selection_box = input.selection_box
+			ret_table.stage_counts = stages_count
+			ret_table.stages = make_resgfx(input)
+			ret_table.stages_effect = make_resglow(input)
+			ret_table.effect_animation_period = input.gfx_ani_per
+			ret_table.effect_animation_period_deviation = input.gfx_ani_dev
+			ret_table.effect_darkness_multiplier = input.gfx_dark_mul
+			ret_table.min_effect_alpha = input.gfx_alpha_min
+			ret_table.max_effect_alpha = input.gfx_alpha_max
+			ret_table.map_color = input.map_color
+			ret_table.map_grid = input.map_grid
+			data:extend({ret_table})
 		end
+		
 		if input.get then
-			input.alt_name = input.get
-		else
-			input.alt_name = input.name
-		end	
+			input.autoplace.resource_index = input.get
+		end
 		
 		resource_generator.setup_resource_autoplace_data(input.name,
 		{
-		name = input.alt_name,
+		name = input.name,
 		order = input.order,
 		base_density = input.autoplace.base_density,
 		has_starting_area_placement = input.autoplace.starting_area,
@@ -1002,7 +1012,7 @@ function angelsmods.functions.remove_resource(resource)
 			resource_generator.resource_indexes[resource] = nil
 			resource_generator.resource_autoplace_data[resource] = nil
 		end
-		log(serpent.block(resource))
+		--log(serpent.block(resource))
 	end
 	if data.raw.resource["infinite-"..resource] then
 		data.raw.resource["infinite-"..resource] = nil
@@ -1055,21 +1065,11 @@ function angelsmods.functions.update_autoplace()
 				--Add autoplace to resource
 				if data.raw.resource[input.name] then
 					data.raw.resource[input.name].order = "a-"..input.order
-					-- data.raw.resource[input.name].autoplace = resource_autoplace.resource_autoplace_settings{
-							-- name = input.name,
-							-- order = input.order,
-							-- base_density = input.autoplace.base_density,
-							-- has_starting_area_placement = input.autoplace.starting_area,
-							-- resource_index = input.autoplace.resource_index,
-							-- regular_rq_factor_multiplier = input.autoplace.regular_rq_factor_multiplier;
-							-- starting_rq_factor_multiplier = input.autoplace.starting_rq_factor_multiplier;
-							-- base_spots_per_km2 = input.autoplace.base_spots_per_km2,
-							-- random_probability = input.autoplace.random_probability,
-							-- random_spot_size_minimum = input.autoplace.random_spot_size_minimum,
-							-- random_spot_size_maximum = input.autoplace.random_spot_size_maximum,
-							-- additional_richness = input.autoplace.additional_richness,
-							-- richness_post_multiplier = input.richness_post_multiplier
-					-- }
+					
+					if input.get then
+						input.autoplace.resource_index = input.get
+					end
+		
 					resource_generator.setup_resource_autoplace_data(input.name,
 					{
 					name = input.name,
@@ -1102,8 +1102,8 @@ function angelsmods.functions.update_autoplace()
 							end
 						end
 						data.raw.resource[input.name].minable.required_fluid = input.acid_req
-						log(serpent.block(input.acid_req))
-						log(serpent.block(data.raw.resource[input.name].minable.required_fluid))
+						-- log(serpent.block(input.acid_req))
+						-- log(serpent.block(data.raw.resource[input.name].minable.required_fluid))
 					end
 				end
 			end

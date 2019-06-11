@@ -1,18 +1,6 @@
 if bobmods and bobmods.ores then
 	if angelsmods.ores.disable_ore_override or (not angelsmods.refining) then
-		if bobmods.ores.bauxite.enabled then
-			angelsmods.functions.add_resource("update", {
-				name = "bauxite-ore",
-				order = "b-ca",
-				autoplace = {
-					starting_area = false,
-					resource_index = 30,
-					base_density = 8,
-					regular_rq_factor_multiplier = 1.0,
-					starting_rq_factor_multiplier = 1.1
-				}
-			})
-
+		if resource_generator.resource_autoplace_data["bauxite-ore"] then
 			angelsmods.functions.add_resource("make", {
 				name = "infinite-bauxite-ore",
 				get = "bauxite-ore",
@@ -36,7 +24,7 @@ if bobmods and bobmods.ores then
 				icon = "__bobores__/graphics/icons/bauxite-ore.png",
 				autoplace = {
 					starting_area = false,
-					resource_index = 30,
+					resource_index = "bauxite-ore",
 					base_density = 5,
 					regular_rq_factor_multiplier = 0.3,
 					starting_rq_factor_multiplier = 0.5,
@@ -44,19 +32,7 @@ if bobmods and bobmods.ores then
 			})
 		end
 
-		if bobmods.ores.cobalt.enabled then
-			angelsmods.functions.add_resource("update", {
-				name = "cobalt-ore",
-				order = "b-cb",
-				autoplace = {
-					starting_area = false,
-					resource_index = 31,
-					base_density = 8,
-					regular_rq_factor_multiplier = 1.0,
-					starting_rq_factor_multiplier = 1.1
-				}
-			})
-
+		if resource_generator.resource_autoplace_data["cobalt-ore"] then
 			angelsmods.functions.add_resource("make", {
 				name = "infinite-cobalt-ore",
 				get = "cobalt-ore",
@@ -80,7 +56,7 @@ if bobmods and bobmods.ores then
 				icon = "__bobores__/graphics/icons/cobalt-ore.png",
 				autoplace = {
 					starting_area = false,
-					resource_index = 31,
+					--resource_index = 31,
 					base_density = 5,
 					regular_rq_factor_multiplier = 0.3,
 					starting_rq_factor_multiplier = 0.5,
@@ -88,19 +64,7 @@ if bobmods and bobmods.ores then
 			})
 		end
 
-		if bobmods.ores.gems.enabled then
-			angelsmods.functions.add_resource("update", {
-				name = "gem-ore",
-				order = "b-cc",
-				autoplace = {
-					starting_area = false,
-					resource_index = 32,
-					base_density = 8,
-					regular_rq_factor_multiplier = 1.0,
-					starting_rq_factor_multiplier = 1.1
-				}
-			})
-
+		if resource_generator.resource_autoplace_data["gem-ore"] then
 			angelsmods.functions.add_resource("make", {
 				name = "infinite-gem-ore",
 				get = "gem-ore",
@@ -124,7 +88,7 @@ if bobmods and bobmods.ores then
 				icon = "__bobores__/graphics/icons/gem-ore.png",
 				autoplace = {
 					starting_area = false,
-					resource_index = 32,
+					--resource_index = 32,
 					base_density = 5,
 					regular_rq_factor_multiplier = 0.3,
 					starting_rq_factor_multiplier = 0.5,
@@ -132,19 +96,7 @@ if bobmods and bobmods.ores then
 			})
 		end
 
-		if bobmods.ores.gold.enabled then
-			angelsmods.functions.add_resource("update", {
-				name = "gold-ore",
-				order = "b-cd",
-				autoplace = {
-					starting_area = false,
-					resource_index = 33,
-					base_density = 8,
-					regular_rq_factor_multiplier = 1.0,
-					starting_rq_factor_multiplier = 1.1
-				}
-			})
-
+		if resource_generator.resource_autoplace_data["gold-ore"] then
 			angelsmods.functions.add_resource("make", {
 				name = "infinite-gold-ore",
 				get = "gold-ore",
@@ -168,7 +120,7 @@ if bobmods and bobmods.ores then
 				icon = "__bobores__/graphics/icons/gold-ore.png",
 				autoplace = {
 					starting_area = false,
-					resource_index = 33,
+					--resource_index = 33,
 					base_density = 5,
 					regular_rq_factor_multiplier = 0.3,
 					starting_rq_factor_multiplier = 0.5,
@@ -176,19 +128,7 @@ if bobmods and bobmods.ores then
 			})
 		end
 
-		if bobmods.ores.lead.enabled then
-			angelsmods.functions.add_resource("update", {
-				name = "lead-ore",
-				order = "b-ce",
-				autoplace = {
-					starting_area = true,
-					resource_index = 34,
-					base_density = 8,
-					regular_rq_factor_multiplier = 1.0,
-					starting_rq_factor_multiplier = 1.1
-				}
-			})
-
+		if bobmods.ores.lead then
 			angelsmods.functions.add_resource("make", {
 				name = "infinite-lead-ore",
 				get = "lead-ore",
@@ -212,7 +152,7 @@ if bobmods and bobmods.ores then
 				icon = "__bobores__/graphics/icons/lead-ore.png",
 				autoplace = {
 					starting_area = false,
-					resource_index = 34,
+					--resource_index = 34,
 					base_density = 5,
 					regular_rq_factor_multiplier = 0.3,
 					starting_rq_factor_multiplier = 0.5,
@@ -220,19 +160,7 @@ if bobmods and bobmods.ores then
 			})
 		end
 
-		if bobmods.ores.nickel.enabled then
-			angelsmods.functions.add_resource("update", {
-				name = "nickel-ore",
-				order = "b-cf",
-				autoplace = {
-					starting_area = false,
-					resource_index = 35,
-					base_density = 8,
-					regular_rq_factor_multiplier = 1.0,
-					starting_rq_factor_multiplier = 1.1
-				}
-			})
-
+		if bobmods.ores.nickel then
 			angelsmods.functions.add_resource("make", {
 				name = "infinite-nickel-ore",
 				get = "nickel-ore",
@@ -256,7 +184,7 @@ if bobmods and bobmods.ores then
 				icon = "__bobores__/graphics/icons/nickel-ore.png",
 				autoplace = {
 					starting_area = false,
-					resource_index = 35,
+					--resource_index = 35,
 					base_density = 5,
 					regular_rq_factor_multiplier = 0.3,
 					starting_rq_factor_multiplier = 0.5,
@@ -264,19 +192,7 @@ if bobmods and bobmods.ores then
 			})
 		end
 
-		if bobmods.ores.quartz.enabled then
-			angelsmods.functions.add_resource("update", {
-				name = "quartz",
-				order = "b-cg",
-				autoplace = {
-					starting_area = true,
-					resource_index = 36,
-					base_density = 8,
-					regular_rq_factor_multiplier = 1.0,
-					starting_rq_factor_multiplier = 1.1
-				}
-			})
-
+		if bobmods.ores.quartz then
 			angelsmods.functions.add_resource("make", {
 				name = "infinite-quartz",
 				get = "quartz",
@@ -300,7 +216,7 @@ if bobmods and bobmods.ores then
 				icon = "__bobores__/graphics/icons/quartz.png",
 				autoplace = {
 					starting_area = false,
-					resource_index = 36,
+					--resource_index = 36,
 					base_density = 5,
 					regular_rq_factor_multiplier = 0.3,
 					starting_rq_factor_multiplier = 0.5,
@@ -308,19 +224,7 @@ if bobmods and bobmods.ores then
 			})
 		end
 
-		if bobmods.ores.rutile.enabled then
-			angelsmods.functions.add_resource("update", {
-				name = "rutile-ore",
-				order = "b-ch",
-				autoplace = {
-					starting_area = false,
-					resource_index = 37,
-					base_density = 8,
-					regular_rq_factor_multiplier = 1.0,
-					starting_rq_factor_multiplier = 1.1
-				}
-			})
-
+		if bobmods.ores.rutile then
 			angelsmods.functions.add_resource("make", {
 				name = "infinite-rutile-ore",
 				get = "rutile-ore",
@@ -344,7 +248,7 @@ if bobmods and bobmods.ores then
 				icon = "__bobores__/graphics/icons/rutile-ore.png",
 				autoplace = {
 					starting_area = false,
-					resource_index = 37,
+					--resource_index = 37,
 					base_density = 5,
 					regular_rq_factor_multiplier = 0.3,
 					starting_rq_factor_multiplier = 0.5,
@@ -352,19 +256,7 @@ if bobmods and bobmods.ores then
 			})
 		end
 
-		if bobmods.ores.silver.enabled then
-			angelsmods.functions.add_resource("update", {
-				name = "silver-ore",
-				order = "b-ci",
-				autoplace = {
-					starting_area = false,
-					resource_index = 38,
-					base_density = 8,
-					regular_rq_factor_multiplier = 1.0,
-					starting_rq_factor_multiplier = 1.1
-				}
-			})
-
+		if bobmods.ores.silver then
 			angelsmods.functions.add_resource("make", {
 				name = "infinite-silver-ore",
 				get = "silver-ore",
@@ -388,7 +280,7 @@ if bobmods and bobmods.ores then
 				icon = "__bobores__/graphics/icons/silver-ore.png",
 				autoplace = {
 					starting_area = false,
-					resource_index = 38,
+					--resource_index = 38,
 					base_density = 5,
 					regular_rq_factor_multiplier = 0.3,
 					starting_rq_factor_multiplier = 0.5,
@@ -396,18 +288,7 @@ if bobmods and bobmods.ores then
 			})
 		end
 
-		if bobmods.ores.sulfur.enabled then
-			angelsmods.functions.add_resource("update", {
-				name = "sulfur",
-				order = "b-cj",
-				autoplace = {
-					starting_area = false,
-					resource_index = 39,
-					base_density = 8,
-					regular_rq_factor_multiplier = 1.0,
-					starting_rq_factor_multiplier = 1.1
-				}
-			})
+		if bobmods.ores.sulfur then
 
 			angelsmods.functions.add_resource("make", {
 				name = "infinite-sulfur",
@@ -432,7 +313,7 @@ if bobmods and bobmods.ores then
 				icon = "__bobores__/graphics/icons/sulfur.png",
 				autoplace = {
 					starting_area = false,
-					resource_index = 39,
+					--resource_index = 39,
 					base_density = 5,
 					regular_rq_factor_multiplier = 0.3,
 					starting_rq_factor_multiplier = 0.5,
@@ -440,19 +321,39 @@ if bobmods and bobmods.ores then
 			})
 		end
 
-		if bobmods.ores.tin.enabled then
-			angelsmods.functions.add_resource("update", {
-				name = "tin-ore",
-				order = "b-ck",
+		if bobmods.ores.thorium then
+			angelsmods.functions.add_resource("make", {
+				name = "infinite-thorium-ore",
+				get = "thorium-ore",
+				order = "b",
+				sheet = 2,
+				infinite = true,
+				glow = true,
+				var = 2,
+				map_color = {r = 0.600, g = 0.600, b = 0.600},
+				tint = {r = 0.95, g = 0.95, b = 0.95},
+				mining_time = 1,
+				type = "item",
+				minimum = angelsmods.ores.yield,
+				normal = 1500,
+				maximum = 6000,
+				acid_to_mine = "sulfuric-acid",
+				output_name = "thorium-ore",
+				output_min = 1,
+				output_max = 1,
+				output_probability = angelsmods.ores.loweryield,
+				icon = "__bobores__/graphics/icons/thorium-ore.png",
 				autoplace = {
-					starting_area = true,
-					resource_index = 40,
-					base_density = 8,
-					regular_rq_factor_multiplier = 1.0,
-					starting_rq_factor_multiplier = 1.1
+					starting_area = false,
+					--resource_index = 40,
+					base_density = 5,
+					regular_rq_factor_multiplier = 0.3,
+					starting_rq_factor_multiplier = 0.5,
 				}
 			})
-
+		end
+		
+		if bobmods.ores.tin then
 			angelsmods.functions.add_resource("make", {
 				name = "infinite-tin-ore",
 				get = "tin-ore",
@@ -476,7 +377,7 @@ if bobmods and bobmods.ores then
 				icon = "__bobores__/graphics/icons/tin-ore.png",
 				autoplace = {
 					starting_area = false,
-					resource_index = 40,
+					--resource_index = 40,
 					base_density = 5,
 					regular_rq_factor_multiplier = 0.3,
 					starting_rq_factor_multiplier = 0.5,
@@ -484,19 +385,7 @@ if bobmods and bobmods.ores then
 			})
 		end
 
-		if bobmods.ores.tungsten.enabled then
-			angelsmods.functions.add_resource("update", {
-				name = "tungsten-ore",
-				order = "b-cl",
-				autoplace = {
-					starting_area = false,
-					resource_index = 41,
-					base_density = 8,
-					regular_rq_factor_multiplier = 1.0,
-					starting_rq_factor_multiplier = 1.1
-				}
-			})
-
+		if bobmods.ores.tungsten then
 			angelsmods.functions.add_resource("make", {
 				name = "infinite-tungsten-ore",
 				get = "tungsten-ore",
@@ -520,7 +409,7 @@ if bobmods and bobmods.ores then
 				icon = "__bobores__/graphics/icons/tungsten-ore.png",
 				autoplace = {
 					starting_area = false,
-					resource_index = 41,
+					--resource_index = 41,
 					base_density = 5,
 					regular_rq_factor_multiplier = 0.3,
 					starting_rq_factor_multiplier = 0.5,
@@ -528,19 +417,7 @@ if bobmods and bobmods.ores then
 			})
 		end
 
-		if bobmods.ores.zinc.enabled then
-			angelsmods.functions.add_resource("update", {
-				name = "zinc-ore",
-				order = "b-cm",
-				autoplace = {
-					starting_area = false,
-					resource_index = 42,
-					base_density = 8,
-					regular_rq_factor_multiplier = 1.0,
-					starting_rq_factor_multiplier = 1.1
-				}
-			})
-
+		if bobmods.ores.zinc then
 			angelsmods.functions.add_resource("make", {
 				name = "infinite-zinc-ore",
 				get = "zinc-ore",
@@ -564,7 +441,7 @@ if bobmods and bobmods.ores then
 				icon = "__bobores__/graphics/icons/zinc-ore.png",
 				autoplace = {
 					starting_area = false,
-					resource_index = 42,
+					--resource_index = 42,
 					base_density = 5,
 					regular_rq_factor_multiplier = 0.3,
 					starting_rq_factor_multiplier = 0.5,

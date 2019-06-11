@@ -3,7 +3,7 @@ angelsmods.functions.add_resource("update", {
 	order = "b-aa",
 	autoplace = {
 		starting_area = true,
-		resource_index = 0,
+		--resource_index = 0,
 		base_density = 8,
 		regular_rq_factor_multiplier = 1.0,
 		starting_rq_factor_multiplier = 1.1
@@ -33,7 +33,7 @@ angelsmods.functions.add_resource("make", {
 	icon = "__base__/graphics/icons/coal.png",
 	autoplace = {
 		starting_area = false,
-		resource_index = 0,
+		--resource_index = 0,
 		base_density = 5,
 		regular_rq_factor_multiplier = 0.3,
 		starting_rq_factor_multiplier = 0.5,
@@ -46,7 +46,7 @@ if angelsmods.ores.disable_ore_override or (not angelsmods.refining) then
 		order = "b-ab",
 		autoplace = {
 			starting_area = true,
-			resource_index = 1,
+			--resource_index = 1,
 			base_density = 10,
 			regular_rq_factor_multiplier = 1.10,
 			starting_rq_factor_multiplier = 1.5
@@ -76,7 +76,7 @@ if angelsmods.ores.disable_ore_override or (not angelsmods.refining) then
 		icon = "__base__/graphics/icons/iron-ore.png",
 		autoplace = {
 			starting_area = false,
-			resource_index = 1,
+			--resource_index = 1,
 			base_density = 5,
 			regular_rq_factor_multiplier = 0.3,
 			starting_rq_factor_multiplier = 0.5,
@@ -88,7 +88,7 @@ if angelsmods.ores.disable_ore_override or (not angelsmods.refining) then
 		order = "b-ac",
 		autoplace = {
 			starting_area = true,
-			resource_index = 2,
+			--resource_index = 2,
 			base_density = 8,
 			regular_rq_factor_multiplier = 1.10,
 			starting_rq_factor_multiplier = 1.2
@@ -118,7 +118,7 @@ if angelsmods.ores.disable_ore_override or (not angelsmods.refining) then
 		icon = "__base__/graphics/icons/copper-ore.png",
 		autoplace = {
 			starting_area = false,
-			resource_index = 2,
+			--resource_index = 2,
 			base_density = 4,
 			regular_rq_factor_multiplier = 0.3,
 			starting_rq_factor_multiplier = 0.5,
@@ -130,7 +130,7 @@ if angelsmods.ores.disable_ore_override or (not angelsmods.refining) then
 		order = "b-ad",
 		autoplace = {
 			starting_area = true,
-			resource_index = 3,
+			--resource_index = 3,
 			base_density = 8,
 			regular_rq_factor_multiplier = 1.10,
 			starting_rq_factor_multiplier = 1.2
@@ -160,7 +160,7 @@ if angelsmods.ores.disable_ore_override or (not angelsmods.refining) then
 		icon = "__base__/graphics/icons/stone.png",
 		autoplace = {
 			starting_area = false,
-			resource_index = 3,
+			--resource_index = 3,
 			base_density = 4,
 			regular_rq_factor_multiplier = 0.3,
 			starting_rq_factor_multiplier = 0.5,
@@ -172,7 +172,7 @@ if angelsmods.ores.disable_ore_override or (not angelsmods.refining) then
 		order = "b-ae",
 		autoplace = {
 			starting_area = false,
-			resource_index = 4,
+			--resource_index = 4,
 			base_density = 8,
 			regular_rq_factor_multiplier = 1.10,
 			starting_rq_factor_multiplier = 1.2
@@ -202,7 +202,7 @@ if angelsmods.ores.disable_ore_override or (not angelsmods.refining) then
 		icon = "__base__/graphics/icons/uranium-ore.png",
 		autoplace = {
 			starting_area = false,
-			resource_index = 4,
+			--resource_index = 4,
 			base_density = 4,
 			regular_rq_factor_multiplier = 0.3,
 			starting_rq_factor_multiplier = 0.5,
