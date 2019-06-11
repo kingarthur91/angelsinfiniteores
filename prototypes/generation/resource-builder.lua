@@ -936,7 +936,7 @@ function angelsmods.functions.make_resource()
 				if not input.icon_size then
 					input.icon_size = 32
 				end					
-				ret_table.icons = {icon = input.icon, icon_size = input.icon_size}
+				ret_table.icons = {{icon = input.icon, icon_size = input.icon_size}}
 			end
 			ret_table.name = input.name
 			ret_table.icon_size = input.icon_size
