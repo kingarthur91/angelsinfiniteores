@@ -110,7 +110,7 @@ local function update_autoplace_indexes()
     end
   end
   starting_resource_count = index
-  log("resource_indexes_internal = " .. serpent.block(resource_indexes_internal))
+--  log("resource_indexes_internal = " .. serpent.block(resource_indexes_internal))
 --  log("names = " .. serpent.block(names))
 
   -- add all the non-starting resources
@@ -121,7 +121,7 @@ local function update_autoplace_indexes()
     end
   end
   regular_resource_count = index
-  log("resource_indexes_internal = " .. serpent.block(resource_indexes_internal))
+--  log("resource_indexes_internal = " .. serpent.block(resource_indexes_internal))
 --  log("starting_resource_count = " .. starting_resource_count)
 --  log("regular_resource_count = " .. regular_resource_count)
 
@@ -496,11 +496,13 @@ end
 
 function resource_generator.finalise_resource_autoplace()
   if not resource_generator.generated then
-    -- log("resource_autoplace_data = " .. serpent.block(resource_autoplace_data))
+--    log("resource_autoplace_data = " .. serpent.block(resource_autoplace_data))
     update_autoplace_indexes()
-    -- log("resource_autoplace_data = " .. serpent.block(resource_autoplace_data))
+--    log("resource_autoplace_data = " .. serpent.block(resource_autoplace_data))
     for name, resource in pairs(resource_autoplace_data) do
-      data.raw.resource[name].autoplace = resource_autoplace_settings(resource)
+      if data.raw.resource[name] then
+        data.raw.resource[name].autoplace = resource_autoplace_settings(resource)
+      end
     end
     resource_generator.generated = true
   end

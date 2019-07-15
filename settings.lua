@@ -25,5 +25,12 @@ data:extend(
     default_value = true,
     order = "d",
    },
+   {
+    type = "bool-setting",
+    name = "angels-keepuranacid",
+    setting_type = "startup",
+    default_value = true,
+    order = "d",
+   },
 }
 )

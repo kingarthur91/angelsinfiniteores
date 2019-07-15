@@ -1,8 +1,21 @@
 ---------------------------------------------------------------------------------------------------
+Version: 0.8.10
+Date: 15.07.2019
+  Bugfixes:
+    - added setting to leave uranium ore requiring acid to main even if require acid setting is off
+  Changes:
+	- added pymods infinite ores
+	- readded yuoki mods infinite ores
+---------------------------------------------------------------------------------------------------
+Version: 0.8.9
+Date: 11.06.2019
+  Bugfixes:
+    - fix to resource generator functions
+---------------------------------------------------------------------------------------------------
 Version: 0.8.8
 Date: 11.06.2019
   Bugfixes:
-    - fixed missing {} brackets in icons when attempting to generate vinilla resources
+    - fixed missing {} brackets in icons when attempting to generate vanilla resources
 ---------------------------------------------------------------------------------------------------
 Version: 0.8.7
 Date: 02.06.2019

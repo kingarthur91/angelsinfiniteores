@@ -910,13 +910,13 @@ function angelsmods.functions.make_resource()
 				input.selection_box = {{ -0.5, -0.5}, {0.5, 0.5}}
 			end
 			--Add fluidrequirements according to mod options
-			if input.acid_to_mine and angelsmods.ores and angelsmods.ores.enablefluidreq then
+			if input.acid_to_mine and angelsmods.ores and angelsmods.ores.enablefluidreq or (input.name == "uranium-ore" or input.name == "infinite-uranium-ore") and settings.startup["angels-keepuranacid"].value then
 				input.acid_amount = 10
 			end
 			--Get map_color and icon from the regular resource
 			if input.get then
-				input.map_color = data.raw.resource[input.get].map_color
 				if data.raw.resource[input.get] then
+					input.map_color = data.raw.resource[input.get].map_color
 					if data.raw.resource[input.get].icon_size then 
 						input.icon_size = data.raw.resource[input.get].icon_size 
 					else 
@@ -1087,7 +1087,10 @@ function angelsmods.functions.update_autoplace()
 					richness_post_multiplier = input.richness_post_multiplier
 					}
 					)
-					if input.acid_to_mine and (angelsmods.ores and angelsmods.ores.enablefluidreq) then
+					--log(serpent.block(input.name))
+					--log(serpent.block(string.find(input.name, "uranium-ore")))
+					if input.acid_to_mine and (angelsmods.ores and angelsmods.ores.enablefluidreq) or (input.name == "uranium-ore" or input.name == "infinite-uranium-ore") and settings.startup["angels-keepuranacid"].value then
+					--log("is this doing anything")
 						if angelsmods.petrochem then
 							if angelsmods.trigger.enableacids then
 								input.acid_req = input.acid_to_mine
@@ -1102,8 +1105,8 @@ function angelsmods.functions.update_autoplace()
 							end
 						end
 						data.raw.resource[input.name].minable.required_fluid = input.acid_req
-						-- log(serpent.block(input.acid_req))
-						-- log(serpent.block(data.raw.resource[input.name].minable.required_fluid))
+						--log(serpent.block(input.acid_req))
+						--log(serpent.block(data.raw.resource[input.name].minable.required_fluid))
 					end
 				end
 			end

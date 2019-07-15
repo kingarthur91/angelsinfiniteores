@@ -30,5 +30,9 @@ require("prototypes.generation.angels-ore-inf")
 
 require("prototypes.generation.bob-ore-inf")
 
+require("prototypes.generation.py-ore-inf")
+
+require("prototypes.generation.yuoki-ore-inf")
+
 -- EXECUTE FUNCTIONS
 angelsmods.functions.make_resource()

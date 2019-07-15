@@ -21,7 +21,7 @@ if bobmods and bobmods.ores then
 				output_min = 1,
 				output_max = 1,
 				output_probability = angelsmods.ores.loweryield,
-				icon = "__bobores__/graphics/icons/bauxite-ore.png",
+				-- icon = "__bobores__/graphics/icons/bauxite-ore.png",
 				autoplace = {
 					starting_area = false,
 					resource_index = "bauxite-ore",
@@ -53,7 +53,7 @@ if bobmods and bobmods.ores then
 				output_min = 1,
 				output_max = 1,
 				output_probability = angelsmods.ores.loweryield,
-				icon = "__bobores__/graphics/icons/cobalt-ore.png",
+				-- icon = "__bobores__/graphics/icons/cobalt-ore.png",
 				autoplace = {
 					starting_area = false,
 					--resource_index = 31,
@@ -85,7 +85,7 @@ if bobmods and bobmods.ores then
 				output_min = 1,
 				output_max = 1,
 				output_probability = angelsmods.ores.loweryield,
-				icon = "__bobores__/graphics/icons/gem-ore.png",
+				-- icon = "__bobores__/graphics/icons/gem-ore.png",
 				autoplace = {
 					starting_area = false,
 					--resource_index = 32,
@@ -117,7 +117,7 @@ if bobmods and bobmods.ores then
 				output_min = 1,
 				output_max = 1,
 				output_probability = angelsmods.ores.loweryield,
-				icon = "__bobores__/graphics/icons/gold-ore.png",
+				-- icon = "__bobores__/graphics/icons/gold-ore.png",
 				autoplace = {
 					starting_area = false,
 					--resource_index = 33,
@@ -149,7 +149,7 @@ if bobmods and bobmods.ores then
 				output_min = 1,
 				output_max = 1,
 				output_probability = angelsmods.ores.loweryield,
-				icon = "__bobores__/graphics/icons/lead-ore.png",
+				-- icon = "__bobores__/graphics/icons/lead-ore.png",
 				autoplace = {
 					starting_area = false,
 					--resource_index = 34,
@@ -181,7 +181,7 @@ if bobmods and bobmods.ores then
 				output_min = 1,
 				output_max = 1,
 				output_probability = angelsmods.ores.loweryield,
-				icon = "__bobores__/graphics/icons/nickel-ore.png",
+				-- icon = "__bobores__/graphics/icons/nickel-ore.png",
 				autoplace = {
 					starting_area = false,
 					--resource_index = 35,
@@ -213,7 +213,7 @@ if bobmods and bobmods.ores then
 				output_min = 1,
 				output_max = 1,
 				output_probability = angelsmods.ores.loweryield,
-				icon = "__bobores__/graphics/icons/quartz.png",
+				-- icon = "__bobores__/graphics/icons/quartz.png",
 				autoplace = {
 					starting_area = false,
 					--resource_index = 36,
@@ -245,7 +245,7 @@ if bobmods and bobmods.ores then
 				output_min = 1,
 				output_max = 1,
 				output_probability = angelsmods.ores.loweryield,
-				icon = "__bobores__/graphics/icons/rutile-ore.png",
+				-- icon = "__bobores__/graphics/icons/rutile-ore.png",
 				autoplace = {
 					starting_area = false,
 					--resource_index = 37,
@@ -277,7 +277,7 @@ if bobmods and bobmods.ores then
 				output_min = 1,
 				output_max = 1,
 				output_probability = angelsmods.ores.loweryield,
-				icon = "__bobores__/graphics/icons/silver-ore.png",
+				-- icon = "__bobores__/graphics/icons/silver-ore.png",
 				autoplace = {
 					starting_area = false,
 					--resource_index = 38,
@@ -310,7 +310,7 @@ if bobmods and bobmods.ores then
 				output_min = 1,
 				output_max = 1,
 				output_probability = angelsmods.ores.loweryield,
-				icon = "__bobores__/graphics/icons/sulfur.png",
+				-- icon = "__bobores__/graphics/icons/sulfur.png",
 				autoplace = {
 					starting_area = false,
 					--resource_index = 39,
@@ -342,7 +342,7 @@ if bobmods and bobmods.ores then
 				output_min = 1,
 				output_max = 1,
 				output_probability = angelsmods.ores.loweryield,
-				icon = "__bobores__/graphics/icons/thorium-ore.png",
+				-- icon = "__bobores__/graphics/icons/thorium-ore.png",
 				autoplace = {
 					starting_area = false,
 					--resource_index = 40,
@@ -374,7 +374,7 @@ if bobmods and bobmods.ores then
 				output_min = 1,
 				output_max = 1,
 				output_probability = angelsmods.ores.loweryield,
-				icon = "__bobores__/graphics/icons/tin-ore.png",
+				-- icon = "__bobores__/graphics/icons/tin-ore.png",
 				autoplace = {
 					starting_area = false,
 					--resource_index = 40,
@@ -406,7 +406,7 @@ if bobmods and bobmods.ores then
 				output_min = 1,
 				output_max = 1,
 				output_probability = angelsmods.ores.loweryield,
-				icon = "__bobores__/graphics/icons/tungsten-ore.png",
+				-- icon = "__bobores__/graphics/icons/tungsten-ore.png",
 				autoplace = {
 					starting_area = false,
 					--resource_index = 41,
@@ -438,7 +438,7 @@ if bobmods and bobmods.ores then
 				output_min = 1,
 				output_max = 1,
 				output_probability = angelsmods.ores.loweryield,
-				icon = "__bobores__/graphics/icons/zinc-ore.png",
+				-- icon = "__bobores__/graphics/icons/zinc-ore.png",
 				autoplace = {
 					starting_area = false,
 					--resource_index = 42,
